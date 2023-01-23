@@ -3,7 +3,7 @@ Small exercices in Ruby -- RSpec 3 Edition
 
 ### Set up instructions
 
-1. Fork this repo
+1. Fork this repo 
 2. Clone your version of the repo to your local machine
 3. On your local machine, `cd` into the root folder of this repo in your terminal
 4. you will need rspec installed to make it work so `$ gem install rspec` if it is not the case yet
