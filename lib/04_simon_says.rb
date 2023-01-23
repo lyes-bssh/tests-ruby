@@ -1,5 +1,35 @@
+def echo(string)
+  return string
+end
 
+def shout(string)
+  return str.upcase
+end
 
+def repeat(string,nb=2)
+  ("#{string} " * nb).delete_suffix!(" ")
+end
+
+def start_of_word(str, nb=1)
+  return string.slice(0,nb)
+end
+
+def first_word(string)
+  return string.split[0]
+end
+
+def titleize(string)
+  string.capitalize! 
+  except = ["and", "the"]
+  phrase = string.split(" ").map{|element| 
+      if except.include?(element) 
+         element
+      else
+         element.capitalize
+      end
+  }.join(" ") 
+  phrase
+end
 
 =begin 
 
@@ -84,5 +114,4 @@ describe "Simon says" do
       expect(titleize("the bridge over the river kwai")).to eq("The Bridge Over the River Kwai")
     end
   end
-
-end
+=end
